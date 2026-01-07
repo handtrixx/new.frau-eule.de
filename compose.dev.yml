@@ -2,20 +2,20 @@ services:
   fraueule-app:
     container_name: fraueule-app
     user: "${PUID}:${PGID}"
-    build: .
+    image: wordpress:latest
     volumes:
       - ./theme:/var/www/html/wp-content/themes/fraueule
       - ./data:/var/www/html/wp-content
-      - ./deployment:/var/www/deployment
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
+    ports:
+      - "8080:80"
     env_file:
       - .env
     depends_on:
       - fraueule-db
     networks:
       - default
-      - caddy
   fraueule-db:
     image: mariadb:10.11
     user: "${PUID}:${PGID}"
@@ -28,6 +28,3 @@ services:
         - ./db:/var/lib/mysql
     networks:
         - default
-networks:
-    caddy:
-        external: true
