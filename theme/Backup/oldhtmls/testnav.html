@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"/>
+    
+    <title>Frau Eule</title>   
+</head>
+
+
+<body style="background-color: rgb(204, 194, 182);">
+
+    
+    <header class="sticky-top" >
+        <!--
+        navbar repräsentiert den umgebenden wrapper und wird in der Regel dem nav Befehl zugeordnet
+        navbar-expand klappt die Navigation aus, d.h. die Menüpunkte sind horizontal angeordnet
+        -->
+        <nav style="background-color: rgb(242, 240, 228);" id="mainmenu" class="navbar navbar-expand-xl">
+            
+            <!--container zentriert die Navigationspunkte-->
+            <div class="container">
+                <div class="row">
+                <!--Logo-->
+                <a href="#" class="navbar-brand" >
+                 <img class="our-logo" src="images/Tutkulog.png" alt="Meine Seite" title="Frau Eule"/>
+                  <span class="d-none d-md-inline ms-2">Frau Eule</span>
+                </a>
+                
+                <!--
+                navbar-toggler formatiert das Aussehen des Hamburger Menü Icon
+                data-bs-toggle legt die Art der Funktion fest (hier zusammenklappen)
+                data-bs-target legt fest auf welches Element das data-bs-toogle angewandt wird
+                -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-main">
+                  <!--navbar-toggler-icon erzeugt ein Hamburger Menü Icon-->  
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!--
+                Der Container nimmt die navigation auf, setzt sie per default auf Zusammengeklappt.
+                navbar-collapse definiert Navigationsbereich als zusammengeklappte NavBar.
+                -->
+                </div>
+                <div class="row">
+                                <div id="nav-main" class="collapse navbar-collapse">
+                                    <p>
+                <!--navbar-nav entfernt die Listenpunkte und die Einrückung und steht für die ul innerhalb der Navigationssstruktur-->
+                <ul class="navbar-nav me-auto">
+                    <!--nav-item steht für die Listenelemente (li)-->
+                    <li class="nav-item">
+                        
+                        <!--
+                         nav-link steht für die Links (a) innerhalb der Liste
+                         active hebt den aktuellen Menüpunkt (Seite) hervor
+                        -->
+                        <a class="nav-link active" href="#">Start</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="file:///Users/tutku/Desktop/FrauEule/Kassel.html">Kassel</a>
+                  </li>
+                    
+                   
+                      <li class="nav-item ">
+                        
+                        <a class="nav-link" href="#">Hiking&Biking</a>
+                        
+                      </li>
+                    
+                  
+                
+                    
+                    <li class="nav-item ">
+                        
+                      <a class="nav-link" href="#">Home Plating</a>
+                        
+                       
+                        
+                    </li>          
+
+                      
+                    <li class="nav-item ">
+                        
+                      <a class="nav-link" href="#">Unprofessional Photography</a>
+                        </li></p>
+                       
+                        
+                    </li>     <p>
+                    <li class="nav-item dropdown">
+                        
+                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Reise</a>
+                      
+                      <ul class="dropdown-menu" style="background-color: rgb(242, 240, 228);">
+                       
+                          <li class="nav-item">
+                            <a class="dropdown-item" href="file:///Users/tutku/Desktop/FrauEule/Kos.html#">Kos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="dropdown-item" href="file:///Users/tutku/Desktop/FrauEule/strasbourg.html">Strasbourg</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="dropdown-item" href="file:///Users/tutku/Desktop/FrauEule/Bozcaada.html#top#">Bozcaada</a>
+                          </li>
+                      
+                       
+                      </ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+              
+              
+            </p>
+            </div>
+          </div>
+            </div>
+       
+        </nav>
+    </header>
+    <header class="bg-light1 py-5">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class="display-5 fw-bolder text-dark mb-2">Frau Eule</h1>
+                        <p class="lead fw-normal text-black-50 mb-4">Willkommen auf meiner persönlichen Website. Hier gibt es viele Beiträge zum Wandern und Radfahren, hauptsächlich in Kassel, 
+                          sowie zu meinen Freizeitaktivitäten, z. B. Gymnastiks, Planting, usw. 
+                          Für mehr zu erfahren über mich und warum ich diese Webseite abgebaut habe, klicken auf "Über Mich"!
+                    </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-outline-dark btn-lg px-4 me-sm-3" href="#aboutme">About Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-circle my-5" style="height: 60%; width: 70%;" src="../FrauEule/images/Tutpr.jpeg" alt="..."></div>
+            </div>
+        </div>
+    </header>
+   
+
+    <div class="ourspacing"></div>
+ 
+
+<div style="background-color: rgb(204, 194, 182); padding: auto;" class="container pt-1 ">
+    <div class="col-12">
+<h2 style="text-align: center;" ><b>Letzte Beiträge
+</b></h2>
+
+
+    </div>
+</div>
+<div class="ourspacing"></div>
+
+
+    <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner px-5">
+      <div class="carousel-item active">
+       <div class="container-fluid">
+        <div class="row">
+          <div class="col-1">
+                  
+          </div>
+            <div class="col-3 ">
+                
+                <img src="../FrauEule/images/winter/low_winter.jpg" class="img-fluid " alt="..." style="cursor: pointer;">
+                <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles">December 2022</a>
+            </div>
+            <div class="col-3">
+                <img src="../FrauEule/images/kos/beach.JPG" class="img-fluid" alt="..." style="cursor: pointer">
+                Holiday in Kos 2022
+            </div>
+            <div class="col-3 ">
+                <img src="../FrauEule/images/strasbourg/pf.JPG" class="img-fluid" style="cursor: pointer;"  
+                 alt="...">
+               Strasbourg 2022 May
+            </div>
+        
+        </div>
+       </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                  
+                </div>
+                <div class="col-3">
+                    <img src="../FrauEule/images/kos/beer 2.png" class="img-fluid" style="cursor: pointer" alt="...">
+                    4
+                </div>
+                <div class="col-3">
+                    <img src="../FrauEule/images/kos/beer 2.png" class="img-fluid" style="cursor: pointer" alt="...">
+                    5
+                </div>
+                <div class="col-3">
+                    <img src="../FrauEule/images/kos/beer 2.png" class="img-fluid" style="cursor: pointer" alt="...">
+                   6
+                </div>
+                <div class="col-1">
+                  
+                </div>
+            </div>
+           </div>
+      </div>
+    
+    </div>
+    <button class="carousel-control-prev carousel-dark" type="button"  data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg>
+      
+    </button>
+    <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+    </button>
+  </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="ourspacing"></div>
+
+
+    <div class="container pt-1 col-12" style="margin-top:30px; background-color: rgb(204, 194, 182); border-top: 1px dotted rgb(242, 240, 228); 
+    border-width: 6px; padding-bottom: 5px; padding-top: 5px;
+    ">
+      <div class="row">
+        <div class="col-12 center">
+          <h2 id="aboutme" style="text-align: center;">About Me</h2>
+          
+          <p style="padding-top: 10px; float: left; ">
+            Hallo Welt! Mein Name ist Tutku Stephan. Eigentlich habe ich Wirtschaftswissenschaften studiert, aber außer dem mathematischen Bereich war das für mich nicht so interessant.
+            Dann ist es mir aufgefallen, dass es mir spaß macht, das CMS zu erkunden, und das Entwerfen von Seiten ist zu meinem Hobby geworden. 
+            Es entsteht die Idee, Websites als Beruf zu erstellen. 
+            Zu Beginn wird diese persönliche Website als Portfolio verwendet. Bitte zögern Sie nicht, ein Feedback zu geben, falls Sie eines haben.
+
+          </p>   
+
+        </div>
+      </div>
+    </div>
+
+         
+    
+    
+        <div class="container pt-1 rounded-2 " style="margin-top:30px; background-color: rgb(242, 240, 228);">
+      <div class="row">
+        <div class="col-12">
+          <h2 style="text-align: left; " ><b>My Webdesign Skills 2
+          </b></h2>
+        </div>
+      </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <table class="table" style="border: rgb(242, 240, 228);">
+                <thead>
+                <tr>
+                <th style="font-size: x-large;">Skill</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td style="padding-bottom: 20px;">HTML</td>
+             
+                </tr>
+                <tr>
+                <td style="padding-bottom: 20px;">CSS</td>
+         
+                </tr>
+                <tr>
+                  <td style="padding-bottom: 20px;">Bootstrap</td>
+           
+                  </tr>
+                <tr>
+                <td style="padding-bottom: 20px;">SaaS</td>
+               
+                
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 20px;">JavaScript</td>
+                
+                </tr></tbody>
+                </table>
+
+          </div>
+<div class="col-sm-10" style="border-left:  rgb(204, 194, 182, 0.2); ">
+              <table class="table" style="border: rgb(242, 240, 228)">
+                <thead>
+                <tr>
+                <th style="font-size: x-large;">Level</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr style="padding-top: 20px;">
+                <td style="padding-top: 10px;">
+                  
+                    <span class="cvcircle "></span>
+                    <span class="cvcircle "></span>
+                    <span class="cvcircle "></span>
+                    <span class="cvcircle "></span>
+                    <span class="cvcircle semi-circle  "></span>
+
+                  
+                </td>
+             
+                </tr>
+                <tr style="padding-top: 20px;">
+                  <td style="padding-top: 10px;">
+
+                  
+                  <span class="cvcircle "></span>
+                  <span class="cvcircle "></span>
+                  <span class="cvcircle "></span>
+                  <span class="cvcircle "></span>
+                  <span class="cvcircle semi-circle  "></span>
+                </td>
+         
+                </tr>
+                <tr style="padding-top: 20px;">
+                  <td style="padding-top: 10px;">
+                    
+                      <span class="cvcircle "></span>
+                      <span class="cvcircle "></span>
+                      <span class="cvcircle "></span>
+                      <span class="cvcircle "></span>
+                      <span class="emptycircle  "></span>
+  
+                    </div>
+                  </td>
+               
+                  </tr>
+                <tr style="padding-top: 20px;">
+                  <td style="padding-top: 10px;">
+                    <span class="cvcircle "></span>
+                  <span class="cvcircle "></span>
+                  <span class="cvcircle "></span>
+                  <span class="emptycircle "></span>
+                  <span class="emptycircle "></span>
+                </td>
+               
+                
+                </tr>
+                <tr style="padding-top: 20px;">
+                  <td style="padding-top: 10px;">
+
+                    
+                    <span class="cvcircle "></span>
+                    <span class="cvcircle "></span>
+                    <span class="emptycircle "></span>
+                    <span class="emptycircle "></span>
+                    <span class="emptycircle "></span>
+                  </td>
+           
+                  </tr>
+                
+                </tr></tbody>
+                </table></div></div>
+
+          </div>
+                      
+        </div>
+        
+          <div class="container pt-1 rounded-2 mt-3 mb-2 shadow" style="background-color: rgb(242, 240, 228);">
+         
+            <div class="col-9">
+        
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="flush-headingOne">
+                <button style="background-color: rgb(242, 240, 228)" class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                 aria-expanded="false" aria-controls="flush-collapseOne">
+                  <p style="float: left; font-size: large;"><strong> Eine Sache, die Du wahrscheinlich nicht über mich weißt, ist...  </strong></p>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" 
+              data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" style="background-color:rgb(242, 240, 228);"> Dass ich "Accordion" mag :) 
+                </div>
+              </div>
+            </div>
+            
+           
+              
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+     
+
+       
+       
+       
+       
+        
+   
+    
+      
+   
+    <footer style="background-color: rgb(242, 240, 228);" class="p-3 mt-3">
+      <!--clearfix bereinigt die beiden nachfolgenden float Angaben-->
+      <div class="container text-center clearfix">
+          
+         <!--float-start entspricht float: left-->
+          <nav id="footermenu" class="navbar navbar-expand float-start">
+           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="impressum.html">Impressum</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="datenschutz.html">Datenschutz</a></li>
+           </ul>
+         </nav>
+         
+          
+          <!--float-end entspricht float: right-->
+          <nav id="socialmenu" class="navbar navbar-expand float-end">
+           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/tutkustephan/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/mbvln"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item">
+              <a class="nav-link"  href="https://www.instagram.com/tutkustephan/"><i class="fa-brands fa-square-instagram"></i></a></li>
+           </ul>
+          </nav> 
+      </div>        
+  </footer>
+    
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>  
+</body>
+</html>

@@ -1,0 +1,32 @@
+services:
+  fraueule-app:
+    container_name: fraueule-app
+    user: "${PUID}:${PGID}"
+    build: .
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes/fraueule
+      - ./data:/var/www/html/wp-content
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    env_file:
+      - .env
+    depends_on:
+      - fraueule-db
+    networks:
+      - default
+      - caddy
+  fraueule-db:
+    image: mariadb:10.11
+    user: "${PUID}:${PGID}"
+    container_name: fraueule-db
+    restart: unless-stopped
+    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW --log_bin_trust_function_creators=true
+    env_file:
+      - .env      
+    volumes:
+        - ./db:/var/lib/mysql
+    networks:
+        - default
+networks:
+    caddy:
+        external: true

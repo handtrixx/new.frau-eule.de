@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <title>Frau Eule</title>   
+</head>
+
+<body style="background-color: rgb(204, 194, 182);">
+    <header class="sticky-top" >
+        <!--
+        navbar repräsentiert den umgebenden wrapper und wird in der Regel dem nav Befehl zugeordnet
+        navbar-expand klappt die Navigation aus, d.h. die Menüpunkte sind horizontal angeordnet
+        -->
+        <nav style="background-color: rgb(242, 240, 228);" id="mainmenu" class="navbar navbar-expand-xl">
+            
+            <!--container zentriert die Navigationspunkte-->
+            <div class="container">
+                
+                <!--Logo-->
+                <a href="#" class="navbar-brand" >
+                 <img class="our-logo" src="images/Tutkulog.png" alt="Meine Seite" title="Frau Eule"/>
+                  <span class="d-none d-md-inline ms-2">Frau Eule</span>
+                </a>
+                
+                <!--
+                navbar-toggler formatiert das Aussehen des Hamburger Menü Icon
+                data-bs-toggle legt die Art der Funktion fest (hier zusammenklappen)
+                data-bs-target legt fest auf welches Element das data-bs-toogle angewandt wird
+                -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-main">
+                  <!--navbar-toggler-icon erzeugt ein Hamburger Menü Icon-->  
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!--
+                Der Container nimmt die navigation auf, setzt sie per default auf Zusammengeklappt.
+                navbar-collapse definiert Navigationsbereich als zusammengeklappte NavBar.
+                -->
+                <div id="nav-main" class="collapse navbar-collapse">
+                <!--navbar-nav entfernt die Listenpunkte und die Einrückung und steht für die ul innerhalb der Navigationssstruktur-->
+                <ul class="navbar-nav me-auto">
+                    <!--nav-item steht für die Listenelemente (li)-->
+                    <li class="nav-item">
+                        
+                        <!--
+                         nav-link steht für die Links (a) innerhalb der Liste
+                         active hebt den aktuellen Menüpunkt (Seite) hervor
+                        -->
+                        <a class="nav-link active" href="#">Start</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kassel</a>
+                  </li>
+                    
+                    <li class="nav-item dropdown">
+                        
+                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Reise</a>
+                      
+                      <ul class="dropdown-menu">
+                          <li class="nav-item">
+                            <a class="dropdown-item" href="#">Strasbourg</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="dropdown-item" href="#">Kos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="dropdown-item" href="#">Milano</a>
+                          </li>
+                      </ul>
+                      <li class="nav-item dropdown">
+                        
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hiking&Biking</a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <a class="dropdown-item" href="#">Strasbourg</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="dropdown-item" href="#">Kos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="dropdown-item" href="#">Milano</a>
+                            </li>
+                        </ul>
+                  
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Archive </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home Plating</a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <a class="dropdown-item" href="#">Unterpunkt 1</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="dropdown-item" href="#">Unterpunkt 2</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="dropdown-item" href="#">Unterpunkt 3</a>
+                            </li>
+                        </ul>
+                        
+                    </li>          
+                </ul>
+              
+              
+        
+            </div>
+          </div>
+        </nav>
+    </header>
+    
+   
+
+        
+        <div class="container pt-1 shadow " style="margin-top:30px; background-color: rgb(242, 240, 228);">
+          <div class="row">
+            <div class="col-sm-2">
+              <h2>About Me</h2>
+              
+              <img class="rounded-circle" style="float: left; object-fit: contain; max-width: 300px; padding: 10px;" 
+              src="images/Tutpr.jpeg"/>
+
+            </div>
+            <div class="col-sm-7">
+          <p style="padding-top: 80px; padding-left: 10%;">
+            Welcome to my personal website. I want to use this site as a portfolio in order to find a webdesigner job.             Welcome to my personal website. I want to use this site as a portfolio in order to find a webdesigner job.
+
+
+          </p>   
+        
+            </div>
+            <div class="col-sm-3" style="border-left: solid rgb(204, 194, 182, 0.2); ">
+              <h3 style="font-style: italic; text-align: left;"><u>Recent Posts</u></h3>
+              <ol class="navbar-nav list-unstyled">
+                <li class="nav-item"><a class="nav-link" href="file:///Users/tutku/Desktop/FrauEule/WanderninSchnee.html">January 2023, Wandern im Schnee, Kassel</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">February 2022</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">January 2022</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">December 2021</a></li>
+                        
+            </ol>
+            </div>
+          </div>
+        </div>
+                
+        
+        
+        
+       
+       
+
+        <div class="container pt-1 shadow " style="margin-top:30px; background-color: rgb(242, 240, 228); border: 1px solid green;">
+         
+            <div class="col-sm-10">
+        
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="flush-headingOne">
+                <button style="background-color: rgb(242, 240, 228)" class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                 aria-expanded="false" aria-controls="flush-collapseOne">
+                  <p style="font-style: italic;"><strong> Eine Sache, die Sie wahrscheinlich nicht über mich wissen...  </strong></p>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" 
+              data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" style="background-color:rgb(242, 240, 228);"> Dass ich "Accordion" mag :) 
+                </div>
+              </div>
+            </div>
+            
+            <!--Test-->
+  
+              
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+       
+       
+        
+   
+    
+      
+    
+    <footer style="background-color: rgb(242, 240, 228);" class="p-3 mt-3">
+      <!--clearfix bereinigt die beiden nachfolgenden float Angaben-->
+      <div class="container text-center clearfix">
+          
+         <!--float-start entspricht float: left-->
+          <nav id="footermenu" class="navbar navbar-expand float-start">
+           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="impressum.html">Impressum</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="datenschutz.html">Datenschutz</a></li>
+           </ul>
+         </nav>
+         
+          
+          <!--float-end entspricht float: right-->
+          <nav id="socialmenu" class="navbar navbar-expand float-end">
+           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/tutkustephan/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/mbvln"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item">
+              <a class="nav-link"  href="https://www.instagram.com/tutkustephan/"><i class="fa-brands fa-square-instagram"></i></a></li>
+           </ul>
+          </nav> 
+      </div>        
+  </footer>
+    
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>  
+</body>
+</html>

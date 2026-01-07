@@ -1,0 +1,541 @@
+@charset "utf-8";
+
+//Variablen die überschrieben werden sollen, müssen vor dem import der bootstrap Basis Dateien eingbunden werden
+//$primary: orange;
+
+$nav-link: orange;
+
+
+
+
+ 
+
+
+//import der Botstrap Basis Dateien und der fontawesome Basis Dateien
+@import "bootstrap/bootstrap.scss";
+
+
+ 
+
+
+/*zusätzliche CSS Defintionen*/
+
+@font-face {
+  font-family: roboto-reg;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+/*Basisformatierung von Fontawesome*/
+.fa-brands,
+.fa-solid {
+  font-size: 1.5em;
+}
+.fa-space-awesome {
+  color: rgba(255, 000, 000, 60%);
+}
+
+
+
+body {
+  font-family: roboto-reg, sans-serif;
+}
+
+/*Die Variable $gray-400 ist in der SCSS Datei _variables.scss von Bootstrap definiert*/
+footer,
+nav#mainmenu {
+  /*background-color: $gray-300;     */
+  background-color: rgb(233, 200, 144);
+} 
+
+.nav-link {padding: 0.25rem;}
+
+
+/*unsere (our) eigenen CSS Defintionen
+our ist ein eigenes Präfix in der Benennung für selbst erstellte Klassen*/
+.our-banner {
+  background: url("../images/wilderness.jpg") no-repeat;
+  background-size: cover;
+}
+
+
+.our-banner2 {
+  background: url("../images/birdbuga.png") no-repeat;
+  background-size: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  
+  .our-banner-kos {
+    background: url("../images/kos/kos-cov.png") no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.our-banner-kassel {
+  background: url("../images/herk_cut.png") no-repeat;
+  background-size: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*definiert die Größe des Logos gecko.svg*/
+.our-logo {
+  width: 12%;
+  height: auto;
+}
+/*nach oben Button*/
+.our-topBtn {
+  background-color: $gray-300; 
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 70px;
+  right: 100px;
+  display: block;
+  padding: 10px 2px 0 2px;
+}
+
+.ourspacing{
+  margin: 1rem 0;
+  color: #f8f0d8;
+  border: 0;
+  border-top: 5px solid;
+}
+
+.ourspacing2{
+  margin: 1rem 0;
+  color: rgb(242, 240, 228);
+  border: 0;
+  border-top: 5px solid;
+}
+
+
+  .bg-cardtut {
+
+    background-color: rgb(242, 240, 228);
+  }
+
+  .ourkoscard {
+    width: 100%;
+    height: 300px;
+
+  }
+
+  .ourkoscard img {
+    width: 100%; /* Set the width of your image to fill the card */
+    height: 100%; /* Set the height of your image to fill the card */
+    object-fit: cover; /* Scale the image to cover the entire container */
+  }
+
+  //tutku section 1 - old posts subpages
+
+  .about-area {
+    background: rgb(242, 240, 228);
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pt-100 {
+    padding-top: 100px;}
+
+
+    .secvice-area {
+      background: #f9faff;
+  }
+.pb-90 {
+      padding-bottom: 90px;
+  }
+  
+.pt-90 {
+      padding-top: 90px;}
+
+      //tutkus style
+
+      .Tutku-topBtn {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 70px;
+        right: 100px;
+        display: block;
+        padding: 10px 2px 0 2px;
+      }
+
+      .Tutku-btn-bordercolour
+      {
+        --bs-btn-color: (204, 194, 182)
+      }
+/* Background image */
+.bg-imageKS {
+  background-image: url(../images/winter/IMG-7312.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  padding-left: 30%;
+  padding-right: 20%;
+}
+.bg-imageKS2 {
+  background-image: url(../images/herk_cut.png);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  padding-left: 30%;
+  padding-right: 20%;
+}
+
+//Alternative bg colors
+.bg-light1 {
+  color: rgb(204, 194, 182);
+
+}
+
+//Alternative text colors
+
+
+
+// old posts1  did not work sourceofoben: https://artfulliving.com/
+
+//colors next previous buttons
+
+.buttonred,
+.buttonred {
+ color: red
+ 
+}
+
+.cvcircle {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(12, 51, 152);
+  border-radius: 50%;
+  border: solid rgb(12, 51, 152) 1px ;
+  display: inline-block;
+}
+
+.semi-circle {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(-90deg,white 49%, white 49%, rgb(12, 51, 152), rgb(12, 51, 152) 51%); 
+  border-radius: 50%;
+}
+
+.emptycircle {
+
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid rgb(12, 51, 152) 1px ;
+  display: inline-block;
+}
+
+.bg-darkKS {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  width: 10px;
+}
+
+//Different text style
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    
+}
+
+.hero {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+  background-position: center center;
+
+}
+
+#herobozca {
+ 
+  background-image: url("../images/Bozcaada/gunbatimi.png") ;
+
+}
+
+#herokassel {
+
+  background-image: url("../images/kassel/herkules_spring.jpg");
+
+}
+
+#herocreta {
+
+  background-image: url("../images/cre/lim.jpg");
+
+}
+
+#herstra {
+  width: 100%;
+  height: 60vh;
+  background: url("../images/strasbourg/night.jpg") center center;
+  background-size: cover;
+  
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+
+}
+
+#herohikebike {
+  width: 100%;
+  height: 60vh;
+  background: url("../images/biking/bikes.jpeg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+
+#herokos {
+  width: 100%;
+  height: 60vh;
+  background: url("../images/kos/beach.JPG") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  z-index: 2;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+}
+
+#hero .btn-get-started:hover {
+  background: #4ea5e0;
+}
+
+//Contact
+.contact{
+  padding: 4%;
+  height: 400px;
+}
+
+.contact-info{
+  margin-top:10%;
+}
+.contact-info img{
+  margin-bottom: 15%;
+}
+.contact-info h2{
+  margin-bottom: 10%;
+}
+.col-md-9{
+  background: #fff;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+  font-weight:600;
+}
+.contact-form button{
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus{
+  box-shadow:none;
+}
+
+/**/
+
+/* Social Icons side by side*/
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the div has a height */
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons i {
+  font-size: 24px; /* Set the icon size as needed */
+}
+
+#footermenu
+{
+  position: absolute;
+  bottom: 0;
+}
+
+//For DigiNergy
+
+.div-block-header {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 99;
+  display: flex;
+  height: 80px;
+  max-width: 1160px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 60px;
+  background-color: #fff;
+}
+
+.div-block-79 {
+  display: flex;
+  align-self: center;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+.button-2 {
+  display: flex;
+  height: 56px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex: 0 auto;
+  border-radius: 30px;
+  background-color: rgba(230, 117, 63, 0.15);
+  color: #e6753f;
+  font-size: 16px;
+}
+
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #2a2b2c;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+//colour for main etc
+
+.colorcomponent{
+background-color: #f8f0d8;
+}
+
+.colorobenunten{
+
+color: rgb(233, 200, 144);
+
+}
+
+.smalldots {
+  border-top: 1 px dotted;
+  color: rgb(233, 200, 144);
+  border-width: 6px;
+  
+}
+.wpforms-field-label {
+
+  text-align:left !important;
+
+}
+
+.wpforms-border-color {
+color:rgb(233, 200, 144) !important;
+
+}
+
+
+
+// Custom styles for the video
+.video-container {
+  video {
+    width: 100%;
+    height: auto;
+    min-width: 650px; // Set a minimum width for the video
+    min-height: 357px; // Set a minimum height for the video
+    object-fit: contain; // Preserve aspect ratio and fit the entire video within the container
+  }
+}
+
+
+.video-fluidL {
+  width: 100%; /* Ensure the video scales down if needed */
+  height: auto; /* Maintain the video's aspect ratio */
+  transform: scale(0.5); /* Adjust the scale value as needed */
+
+}
+
+.video-wrapperL {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+
+
+.contentL {
+  flex: 1;
+  padding-left: 20px;
+}
+
+
