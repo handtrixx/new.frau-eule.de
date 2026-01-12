@@ -174,9 +174,8 @@
         <div class="tab-pane fade" id="contact">
           <h2>Contact</h2>
           <div class="contact mt-3">
-            <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com/username" target="_blank">Instagram</a>
-            <a href="mailto:youremail@example.com">Email</a>
+            <a href="https://www.linkedin.com/in/tutkustephan/" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/tutkustephan" target="_blank">Instagram</a>
           </div>
         </div>
 
