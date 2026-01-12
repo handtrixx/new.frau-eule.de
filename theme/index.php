@@ -118,6 +118,30 @@
     }
 
     /* Contact */
+
+    #contact.show .contact-title {
+  animation: contactFade 0.4s ease forwards;
+}
+#contact.show .contact a {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: contactFade 0.4s ease forwards;
+}
+
+#contact.show .contact a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+#contact.show .contact a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+@keyframes contactFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
     .contact a {
       display: inline-block;
       margin-right: 20px;
@@ -140,6 +164,8 @@
     .contact a:hover::after {
       width: 100%;
     }
+
+
   </style>
 </head>
 
@@ -207,14 +233,14 @@
           </div>
         </div>
 
-        <!-- CONTACT -->
-        <div class="tab-pane fade" id="contact">
-          <h2>Contact</h2>
-          <div class="contact mt-3">
-            <a href="https://www.linkedin.com/in/tutkustephan/" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com/tutkustephan" target="_blank">Instagram </a>
-          </div>
-        </div>
+      <div class="tab-pane fade" id="contact">
+  <h2 class="contact-title">Contact</h2>
+  <div class="contact mt-3">
+    <a href="https://www.linkedin.com/in/tutkustephan/" target="_blank">LinkedIn</a>
+    <a href="https://instagram.com/tutkustephan" target="_blank">Instagram</a>
+  </div>
+</div>
+
 
       </div>
     </div>
