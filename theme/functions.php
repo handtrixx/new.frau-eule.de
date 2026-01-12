@@ -54,3 +54,11 @@ remove_action( 'wp_footer', 'wp_enqueue_stored_styles', 1 );
 remove_action( 'wp_footer', 'wp_maybe_inline_styles', 1 ); // Run for late-loaded styles in the footer.
 remove_action( 'wp_footer', 'wp_admin_bar_render', 1000 ); // Back-compat for themes not using `wp_body_open`.
 remove_action( 'wp_footer', 'the_block_template_skip_link' );
+
+function frau_eule_styles() {
+  wp_enqueue_style(
+    'frau-eule-style',
+    get_template_directory_uri() . '/theme/style.css'
+  );
+}
+add_action('wp_enqueue_scripts', 'frau_eule_styles');
