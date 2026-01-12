@@ -105,9 +105,10 @@
 <div class="container-fluid">
   <div class="row layout">
 
+
     <!-- LEFT PROFILE -->
     <div class="col-md-4 col-lg-3 profile text-center">
-      <img src="profile.jpg" alt="Profile">
+<img src="assets/images/tutiprofil1.jpeg" class="profile-img">
       <h4>Your Name</h4>
       <p class="text-muted mb-1">MSc – University / Department</p>
       <p class="text-muted mb-1">City, Country</p>
