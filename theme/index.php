@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,45 +5,68 @@
   <title>Your Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap 5 -->
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png">
+
+  <!-- Bootstrap -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
 
-  <!-- Google Font (opsiyonel ama önerilir) -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
+      background: #f9f9f9;
       color: #111;
     }
 
-    section {
-      padding: 100px 0;
+    .layout {
+      min-height: 100vh;
     }
 
-    .profile-img {
-      width: 140px;
-      height: 140px;
+    /* Left profile */
+    .profile {
+      background: #fff;
+      padding: 40px;
+      border-right: 1px solid #eee;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
+      margin-bottom: 20px;
     }
 
-    .section-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 40px;
+    /* Tabs */
+    .nav-pills .nav-link {
+      color: #555;
+      border-radius: 0;
+      padding: 12px 0;
+      font-weight: 500;
+    }
+
+    .nav-pills .nav-link.active {
+      background: none;
+      color: #111;
+      border-bottom: 2px solid #111;
+    }
+
+    /* Content */
+    .tab-content {
+      padding: 60px;
     }
 
     /* Photo grid */
     .photo-grid img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
       border-radius: 8px;
+      object-fit: cover;
       transition: transform 0.3s ease;
     }
 
@@ -53,23 +74,23 @@
       transform: scale(1.03);
     }
 
-    /* Contact links */
+    /* Contact */
     .contact a {
-      text-decoration: none;
-      color: #111;
+      display: inline-block;
       margin-right: 20px;
-      font-weight: 500;
+      color: #111;
+      text-decoration: none;
       position: relative;
     }
 
     .contact a::after {
       content: "";
       position: absolute;
-      width: 0;
-      height: 2px;
       bottom: -4px;
       left: 0;
-      background-color: #111;
+      width: 0;
+      height: 2px;
+      background: #111;
       transition: width 0.3s ease;
     }
 
@@ -81,48 +102,82 @@
 
 <body>
 
-  <!-- 1. SECTION: PROFILE -->
-  <section class="container">
-    <div class="row align-items-center">
-      <div class="col-md-3 text-center mb-4 mb-md-0">
-        <img src="profile.jpg" alt="Profile photo" class="profile-img">
+<div class="container-fluid">
+  <div class="row layout">
+
+    <!-- LEFT PROFILE -->
+    <div class="col-md-4 col-lg-3 profile text-center">
+      <img src="profile.jpg" alt="Profile">
+      <h4>Your Name</h4>
+      <p class="text-muted mb-1">MSc – University / Department</p>
+      <p class="text-muted mb-1">City, Country</p>
+      <p class="text-muted">Photography · Travel · Design</p>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="col-md-8 col-lg-9">
+
+      <!-- TABS -->
+      <ul class="nav nav-pills px-5 pt-4" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#home">
+            Home
+          </button>
+        </li>
+        <li class="nav-item ms-4">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#photos">
+            Photos
+          </button>
+        </li>
+        <li class="nav-item ms-4">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#contact">
+            Contact
+          </button>
+        </li>
+      </ul>
+
+      <!-- TAB CONTENT -->
+      <div class="tab-content">
+
+        <!-- HOME -->
+        <div class="tab-pane fade show active" id="home">
+          <h2>About</h2>
+          <p class="mt-3 text-muted">
+            I enjoy creating simple digital experiences and documenting moments from everyday life.
+            Currently based in City, focusing on minimal and thoughtful design.
+          </p>
+        </div>
+
+        <!-- PHOTOS -->
+        <div class="tab-pane fade" id="photos">
+          <h2>Photos from my life</h2>
+
+          <div class="row g-4 mt-3 photo-grid">
+            <div class="col-md-4"><img src="photo1.jpg"></div>
+            <div class="col-md-4"><img src="photo2.jpg"></div>
+            <div class="col-md-4"><img src="photo3.jpg"></div>
+            <div class="col-md-6"><img src="photo4.jpg"></div>
+            <div class="col-md-6"><img src="photo5.jpg"></div>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="tab-pane fade" id="contact">
+          <h2>Contact</h2>
+          <div class="contact mt-3">
+            <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/username" target="_blank">Instagram</a>
+            <a href="mailto:youremail@example.com">Email</a>
+          </div>
+        </div>
+
       </div>
-      <div class="col-md-9">
-        <h1 class="mb-3">Your Name</h1>
-        <p class="mb-1"><strong>Master:</strong> University Name — Department</p>
-        <p class="mb-1"><strong>Location:</strong> City, Country</p>
-        <p class="mb-3"><strong>Hobbies:</strong> Photography, Traveling, Design</p>
-        <p class="text-muted">
-          I enjoy creating simple digital experiences and capturing moments from everyday life.
-        </p>
-      </div>
     </div>
-  </section>
 
-  <!-- 2. SECTION: PHOTOS -->
-  <section class="container">
-    <h2 class="section-title">Photos from my life</h2>
+  </div>
+</div>
 
-    <div class="row g-4 photo-grid">
-      <div class="col-md-4"><img src="photo1.jpg" alt=""></div>
-      <div class="col-md-4"><img src="photo2.jpg" alt=""></div>
-      <div class="col-md-4"><img src="photo3.jpg" alt=""></div>
-      <div class="col-md-6"><img src="photo4.jpg" alt=""></div>
-      <div class="col-md-6"><img src="photo5.jpg" alt=""></div>
-      <div class="col-md-4"><img src="photo6.jpg" alt=""></div>
-    </div>
-  </section>
-
-  <!-- 3. SECTION: CONTACT -->
-  <section class="container">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="contact">
-      <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
-      <a href="https://instagram.com/username" target="_blank">Instagram</a>
-      <a href="mailto:youremail@example.com">Email</a>
-    </div>
-  </section>
-
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
