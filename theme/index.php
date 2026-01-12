@@ -109,8 +109,8 @@
     <!-- LEFT PROFILE -->
     <div class="col-md-4 col-lg-3 profile text-center">
 <img src="./assets/images/tutiprofil1.jpeg" class="profile-img">
-      <h4>Your Name</h4>
-      <p class="text-muted mb-1">MSc – University / Department</p>
+      <h4>Tutku Stephan</h4>
+      <p class="text-muted mb-1">MSc – University of Kassel, Master of Science / <br>MS, Economic Behaviour and Governance,</p>
       <p class="text-muted mb-1">City, Country</p>
       <p class="text-muted">Photography · Travel · Design</p>
     </div>
