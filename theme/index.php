@@ -119,22 +119,25 @@
 
     /* Contact */
 
-    #contact.show .contact-title {
-  animation: contactFade 0.4s ease forwards;
-}
+
+/* Tab titles when opened */
+#contact.show .contact-title,
 #contact.show .contact a {
   opacity: 0;
   transform: translateY(6px);
-  animation: contactFade 0.4s ease forwards;
+  animation: contactFade 0.4s ease both;
 }
 
-#contact.show .contact a:nth-child(1) {
+/* Staggered animation */
+#contact.show .contact a:nth-of-type(1) {
   animation-delay: 0.1s;
 }
 
-#contact.show .contact a:nth-child(2) {
+#contact.show .contact a:nth-of-type(2) {
   animation-delay: 0.2s;
 }
+
+/* Keyframes */
 @keyframes contactFade {
   to {
     opacity: 1;
@@ -142,28 +145,46 @@
   }
 }
 
-    .contact a {
-      display: inline-block;
-      margin-right: 20px;
-      color: #111;
-      text-decoration: none;
-      position: relative;
-    }
+/* Contact links base style */
+.contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 24px;
+  color: #111;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+}
 
-    .contact a::after {
-      content: "";
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: #111;
-      transition: width 0.3s ease;
-    }
+/* Underline hover effect */
+.contact a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #111;
+  transition: width 0.3s ease;
+}
 
-    .contact a:hover::after {
-      width: 100%;
-    }
+.contact a:hover::after {
+  width: 100%;
+}
+
+/* Icon styling */
+.contact a i {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact a:hover i {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
 
 
   </style>
