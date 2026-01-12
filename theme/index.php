@@ -108,7 +108,7 @@
 
     <!-- LEFT PROFILE -->
     <div class="col-md-4 col-lg-3 profile text-center">
-<img src="https://frau-eule.de/wp-content/themes/THEME-ADI/assets/tutiprofil1.jpeg
+<img src="https://new.frau-eule.de/wp-content/themes/THEME-ADI/assets/tutiprofil1.jpeg
 " class="profile-img" alt="Profile photo">
       <h4>Tutku Stephan</h4>
       <p class="text-muted mb-1">University of Kassel/ <br>MS, Economic Behaviour and Governance,</p>
