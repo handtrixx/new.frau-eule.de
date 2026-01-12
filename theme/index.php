@@ -242,8 +242,8 @@
         <div class="tab-pane fade show active" id="home">
           <h2>About</h2>
           <p class="mt-3 text-muted">
-            I’m an introvert who enjoys long bike rides, hiking, and taking photos in nature.
-          </p>
+I’m an introvert who enjoys long bike rides, hiking, and taking photos in nature. 
+Luckily, my city is perfect for this — when it doesn’t rain! 😊          </p>
         </div>
 
         <!-- PHOTOS -->
