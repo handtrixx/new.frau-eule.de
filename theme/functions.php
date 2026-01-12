@@ -55,6 +55,7 @@ remove_action( 'wp_footer', 'wp_maybe_inline_styles', 1 ); // Run for late-loade
 remove_action( 'wp_footer', 'wp_admin_bar_render', 1000 ); // Back-compat for themes not using `wp_body_open`.
 remove_action( 'wp_footer', 'the_block_template_skip_link' );
 
+//forlogo
 function frau_eule_styles() {
   wp_enqueue_style(
     'frau-eule-style',
