@@ -48,23 +48,62 @@
     }
 
     /* Tabs */
-    .nav-pills .nav-link {
-      color: #555;
-      border-radius: 0;
-      padding: 12px 0;
-      font-weight: 500;
-    }
+.nav-pills .nav-link {
+  color: #555;
+  border-radius: 0;
+  padding: 14px 0;
+  font-weight: 600;          /* bold */
+  letter-spacing: 0.02em;    /* additional design */
+  position: relative;
+  transition: color 0.25s ease;
+}
+.nav-pills .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 3px;               /*  bolder */
+  background: #111;
+  transition: width 0.3s ease;
+}
+
+.nav-pills .nav-link.active::after {
+  width: 100%;
+}
+
 
     .nav-pills .nav-link.active {
       background: none;
       color: #111;
       border-bottom: 2px solid #111;
     }
+.nav-pills .nav-link:hover {
+  color: #111;
+}
 
     /* Content */
     .tab-content {
       padding: 60px;
     }
+
+
+    /* Tab pane additional */
+
+    .tab-pane {
+  animation: fadeSlide 0.35s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
     /* Photo grid */
     .photo-grid img {
@@ -119,7 +158,7 @@
 >
 
       <h4>Tutku Stephan</h4>
-      <p class="text-muted text-start">Kassel, Germany</p>
+      <p class="text-muted ">Kassel, Germany</p>
       <p class="text-muted">Photography · Hiking · Design</p>
     </div>
 
