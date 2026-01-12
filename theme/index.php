@@ -299,8 +299,7 @@ Kassel, Germany</p>
 
 
   </div>
-</div>
-<footer class="text-center py-4 border-top mt-5">
+  <footer class="text-center py-4 border-top mt-5">
   <small class="text-muted">
     © 2026 Tutku Stephan · 
     <a href="https://frau-eule.de/privacy-policy/" class="text-decoration-none">
@@ -308,6 +307,8 @@ Kassel, Germany</p>
     </a>
   </small>
 </footer>
+</div>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
