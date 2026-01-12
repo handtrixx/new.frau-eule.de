@@ -46,7 +46,7 @@
 
     /* Left profile */
     .profile {
-      background: #7c3535;
+      background: #fff;
       padding: 40px;
       border-right: 1px solid #eee;
     }
