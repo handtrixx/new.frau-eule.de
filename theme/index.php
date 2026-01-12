@@ -217,7 +217,8 @@
 >
 
       <h4>Tutku Stephan</h4>
-      <p class="text-muted ">Kassel, Germany</p>
+     <i class="bi bi-geo-alt-fill text-danger"></i>
+ <p class="text-muted ">Kassel, Germany</p>
       <p class="text-muted">Biking · Hiking · Design</p>
     </div>
 
