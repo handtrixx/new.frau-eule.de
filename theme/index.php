@@ -253,14 +253,22 @@
             <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/bik1.JPG"></div>
           </div>
         </div>
-
-      <div class="tab-pane fade" id="contact">
+<div class="tab-pane fade" id="contact">
   <h2 class="contact-title">Contact</h2>
+
   <div class="contact mt-3">
-    <a href="https://www.linkedin.com/in/tutkustephan/" target="_blank">LinkedIn</a>
-    <a href="https://instagram.com/tutkustephan" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/tutkustephan/" target="_blank">
+      <i class="bi bi-linkedin"></i>
+      LinkedIn
+    </a>
+
+    <a href="https://instagram.com/tutkustephan" target="_blank">
+      <i class="bi bi-instagram"></i>
+      Instagram
+    </a>
   </div>
 </div>
+
 
 
       </div>
