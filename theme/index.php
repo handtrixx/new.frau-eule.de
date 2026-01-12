@@ -103,7 +103,7 @@
     /* Tab pane additional */
 
     .tab-pane {
-  animation: fadeSlide 0.55s ease;
+  animation: fadeSlide 0.35s ease;
 }
 
 @keyframes fadeSlide {
