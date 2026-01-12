@@ -152,8 +152,8 @@
         <div class="tab-pane fade show active" id="home">
           <h2>About</h2>
           <p class="mt-3 text-muted">
-            I enjoy creating simple digital experiences and documenting moments from everyday life.
-            Currently based in City, focusing on minimal and thoughtful design.
+         I’m an introvert who enjoys long bike rides, hiking, and taking photos in nature. 
+         Luckily, my city is perfect for this — when it doesn’t rain!<i class="bi bi-emoji-smile-fill"></i>
           </p>
         </div>
 
