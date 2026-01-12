@@ -197,6 +197,16 @@
   transform: translateY(-1px);
 }
 
+/*Footers */
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
 
 
   </style>
@@ -286,6 +296,14 @@ Kassel, Germany</p>
 
       </div>
     </div>
+<footer class="text-center py-4 border-top mt-5">
+  <small class="text-muted">
+    © 2026 Tutku Stephan · 
+    <a href="https://frau-eule.de/privacy-policy/" class="text-decoration-none">
+      Privacy Policy
+    </a>
+  </small>
+</footer>
 
   </div>
 </div>
