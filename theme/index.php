@@ -259,6 +259,9 @@ Luckily, my city is perfect for this — when it doesn’t rain! 😊          <
             <div class="col-md-4">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/bik1.JPG">
             </div>
+             <div class="col-md-4">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/bp3.jpg">
+            </div>
           </div>
         </div>
 
