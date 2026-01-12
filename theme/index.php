@@ -95,7 +95,7 @@
 
     /* ✅ General tab animation (CONTACT excluded) */
     .tab-pane:not(#contact) {
-      animation: fadeSlide 0.35s ease;
+      animation: fadeSlide 0.45s ease;
     }
 
     @keyframes fadeSlide {
