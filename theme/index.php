@@ -153,7 +153,7 @@
           <h2>About</h2>
           <p class="mt-3 text-muted">
          I’m an introvert who enjoys long bike rides, hiking, and taking photos in nature. 
-         Luckily, my city is perfect for this — when it doesn’t rain!<i class="bi bi-emoji-smile-fill"></i>
+         Luckily, my city is perfect for this — when it doesn’t rain! 😊
           </p>
         </div>
 
