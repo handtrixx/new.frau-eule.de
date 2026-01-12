@@ -119,8 +119,8 @@
 >
 
       <h4>Tutku Stephan</h4>
-      <p class="text-muted mb-1">Kassel, Germany</p>
-      <p class="text-muted">Photography · Travel · Design</p>
+      <p class="text-muted ">Kassel, Germany</p>
+      <p class="text-muted">Photography · Hiking · Design</p>
     </div>
 
     <!-- RIGHT CONTENT -->
