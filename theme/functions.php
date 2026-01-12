@@ -54,3 +54,4 @@ remove_action( 'wp_footer', 'wp_enqueue_stored_styles', 1 );
 remove_action( 'wp_footer', 'wp_maybe_inline_styles', 1 ); // Run for late-loaded styles in the footer.
 remove_action( 'wp_footer', 'wp_admin_bar_render', 1000 ); // Back-compat for themes not using `wp_body_open`.
 remove_action( 'wp_footer', 'the_block_template_skip_link' );
+remove_action( 'wp_footer', 'print_emoji_detection_script', 7 );
