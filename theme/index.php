@@ -264,7 +264,7 @@
 
         <!-- CONTACT -->
         <div class="tab-pane fade" id="contact">
-          <h2>Contact</h2>
+          <h2></h2>
           <div class="contact mt-3">
             <a href="https://www.linkedin.com/in/tutkustephan/" target="_blank">
               <i class="bi bi-linkedin"></i> LinkedIn
