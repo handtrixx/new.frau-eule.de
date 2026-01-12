@@ -277,7 +277,7 @@ Kassel, Germany</p>
           </div>
         </div>
 <div class="tab-pane fade" id="contact">
-  <h2 class="contact-title">Contact</h2>
+  <h2 class="contact-title"></h2>
 
   <div class="contact mt-3">
     <a href="https://www.linkedin.com/in/tutkustephan/" target="_blank">
