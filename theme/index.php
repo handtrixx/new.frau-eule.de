@@ -115,7 +115,6 @@
 >
 
       <h4>Tutku Stephan</h4>
-      <p class="text-muted mb-1">University of Kassel/ <br>MS, Economic Behaviour and Governance,</p>
       <p class="text-muted mb-1">Kassel, Germany</p>
       <p class="text-muted">Photography · Travel · Design</p>
     </div>
