@@ -203,7 +203,7 @@
           <div class="row g-4 mt-3 photo-grid">
             <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/tutiprofil1.jpeg"></div>
             <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/kar1.JPG"></div>
-            <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/tutiprofil3.jpeg"></div>
+            <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/bik1.JPG"></div>
           </div>
         </div>
 
