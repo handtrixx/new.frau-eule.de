@@ -202,7 +202,7 @@
   right: 20px;
   max-width: 520px;
   margin: auto;
-  background: #111;
+  background: #162818;
   color: #fff;
   padding: 14px 18px;
   border-radius: 8px;
