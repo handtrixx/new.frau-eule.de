@@ -38,6 +38,7 @@
       min-height: 100vh;
     }
 
+    /* Left profile */
     .profile {
       background: #d1d1d1;
       padding: 40px;
@@ -52,8 +53,42 @@
       margin-bottom: 20px;
     }
 
+    /* Tabs */
+    .nav-pills .nav-link {
+      color: #555;
+      border-radius: 0;
+      padding: 14px 0;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .nav-pills .nav-link.active {
+      background: none;
+      color: #111;
+      border-bottom: 2px solid #111;
+    }
+
+    /* Content */
     .tab-content {
       padding: 60px;
+    }
+
+    /* Photos */
+    .photo-grid img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* Contact */
+    .contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-right: 24px;
+      color: #111;
+      text-decoration: none;
+      font-weight: 500;
     }
 
     footer a {
@@ -135,7 +170,7 @@
 <div class="container-fluid">
   <div class="row layout">
 
-    <!-- LEFT -->
+    <!-- LEFT PROFILE -->
     <div class="col-md-4 col-lg-3 profile text-center">
       <img 
         src="<?php echo get_template_directory_uri(); ?>/assets/tutiprofil1.jpeg"
@@ -147,16 +182,70 @@
       <p class="text-muted">Biking · Hiking · Design</p>
     </div>
 
-    <!-- RIGHT -->
+    <!-- RIGHT CONTENT -->
     <div class="col-md-8 col-lg-9">
+
+      <!-- TABS -->
+      <ul class="nav nav-pills px-5 pt-4">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#home">
+            Home
+          </button>
+        </li>
+        <li class="nav-item ms-4">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#photos">
+            Photos
+          </button>
+        </li>
+        <li class="nav-item ms-4">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#contact">
+            Contact
+          </button>
+        </li>
+      </ul>
+
+      <!-- TAB CONTENT -->
       <div class="tab-content">
-        <h2>About</h2>
-        <p class="text-muted mt-3">
-          I’m an introvert who enjoys long bike rides, hiking, and taking photos in nature.
-        </p>
+
+        <!-- HOME -->
+        <div class="tab-pane fade show active" id="home">
+          <h2>About</h2>
+          <p class="mt-3 text-muted">
+            I’m an introvert who enjoys long bike rides, hiking, and taking photos in nature.
+          </p>
+        </div>
+
+        <!-- PHOTOS -->
+        <div class="tab-pane fade" id="photos">
+          <h2>Photos from my life</h2>
+          <div class="row g-4 mt-3 photo-grid">
+            <div class="col-md-4">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/ost1.png">
+            </div>
+            <div class="col-md-4">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/kar1.JPG">
+            </div>
+            <div class="col-md-4">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/bik1.JPG">
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="tab-pane fade" id="contact">
+          <h2>Contact</h2>
+          <div class="contact mt-3">
+            <a href="https://www.linkedin.com/in/tutkustephan/" target="_blank">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://instagram.com/tutkustephan" target="_blank">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
-
   </div>
 
   <footer class="text-center py-4 border-top mt-5">
