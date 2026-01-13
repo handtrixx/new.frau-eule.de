@@ -212,6 +212,7 @@
           <h2>About</h2>
           <p class="mt-3 text-muted">
             I’m an introvert who enjoys long bike rides, hiking, and taking photos in nature.
+            Luckily, my city is perfect for this — when it doesn’t rain! 😊
           </p>
         </div>
 
@@ -228,6 +229,7 @@
             <div class="col-md-4">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/bik1.JPG">
             </div>
+            <div class="col-md-4"> <img src="<?php echo get_template_directory_uri(); ?>/assets/bp3.jpg"> </div>
           </div>
         </div>
 
