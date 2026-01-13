@@ -191,6 +191,19 @@
       color: #111;
       text-decoration: underline;
     }
+
+    /*Cookie Banner */
+    .cookie-buttons {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.cookie-buttons .btn {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+}
+
   </style>
 </head>
 
@@ -291,5 +304,50 @@ Luckily, my city is perfect for this — when it doesn’t rain! 😊          <
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+    const denyBtn = document.getElementById("deny-cookies");
+
+    if (
+      !localStorage.getItem("cookiesAccepted") &&
+      !localStorage.getItem("cookiesDenied")
+    ) {
+      banner.classList.remove("d-none");
+    }
+
+    acceptBtn.addEventListener("click", function () {
+      localStorage.setItem("cookiesAccepted", "true");
+      banner.style.display = "none";
+    });
+
+    denyBtn.addEventListener("click", function () {
+      localStorage.setItem("cookiesDenied", "true");
+      banner.style.display = "none";
+    });
+  });
+</script>
+
+<!---cookie-->
+<div id="cookie-banner" class="cookie-banner d-none">
+  <div class="cookie-content">
+    <span>
+      We use cookies.
+      <a href="https://frau-eule.de/privacy-policy/" target="_blank">Details</a>
+    </span>
+
+    <div class="cookie-buttons">
+      <button id="deny-cookies" class="btn btn-sm btn-outline-light">
+        deny
+      </button>
+      <button id="accept-cookies" class="btn btn-sm btn-light">
+        accept
+      </button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
